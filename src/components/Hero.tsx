@@ -31,22 +31,31 @@ const Hero = () => {
       </div>
 
       {/* Main content */}
-      <div className="relative container mx-auto px-6 py-24">
+      <div className="relative container mx-auto px-6 py-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
-          className="text-center mb-16"
+          className="text-center mb-24"
         >
-          <motion.img
-            src={logo}
-            alt="IO Technologies Logo"
-            className="w-full max-w-2xl mx-auto mb-8"
+          <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-          />
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+            transition={{ 
+              duration: 0.8,
+              type: "spring",
+              stiffness: 100 
+            }}
+            className="w-full flex justify-center items-center mb-12"
+          >
+            <img
+              src={logo}
+              alt="IO Technologies Logo"
+              className="w-full max-w-4xl mx-auto hover:scale-105 transition-transform duration-300"
+              style={{ filter: "drop-shadow(0 0 20px rgba(255,255,255,0.2))" }}
+            />
+          </motion.div>
+          <p className="text-2xl text-gray-300 max-w-3xl mx-auto">
             Advanced GPS tracking solutions powered by cutting-edge satellite technology
           </p>
         </motion.div>

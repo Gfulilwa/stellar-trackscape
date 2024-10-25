@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Satellite, Map, Shield, Car } from "lucide-react";
 import { Button } from "./ui/button";
+import logo from "../assets/logo.png";
 
 const Hero = () => {
   return (
@@ -37,9 +38,14 @@ const Hero = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h1 className="text-6xl font-bold text-white mb-6">
-            IO Technologies
-          </h1>
+          <motion.img
+            src={logo}
+            alt="IO Technologies Logo"
+            className="w-full max-w-2xl mx-auto mb-8"
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.5 }}
+          />
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Advanced GPS tracking solutions powered by cutting-edge satellite technology
           </p>

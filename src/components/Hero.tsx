@@ -4,6 +4,11 @@ import { Button } from "./ui/button";
 import logo from "../assets/logo.png";
 
 const Hero = () => {
+  const scrollToContact = () => {
+    const contactSection = document.getElementById('contact');
+    contactSection?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
     <div className="relative min-h-screen bg-gradient-to-br from-indigo-950 via-purple-900 to-indigo-900 overflow-hidden">
       {/* Animated background dots */}
@@ -83,6 +88,7 @@ const Hero = () => {
           className="text-center"
         >
           <Button
+            onClick={scrollToContact}
             size="lg"
             className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-6 text-lg"
           >

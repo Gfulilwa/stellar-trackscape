@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Lock, Brain, Shield, Fingerprint, Smartphone, Cpu, Key, Wifi } from "lucide-react";
+import { Lock, Brain, Shield, Smartphone, Cpu, MapPin, Battery, Wifi, Bell } from "lucide-react";
 
 const Products = () => {
   return (
@@ -79,19 +79,19 @@ const Products = () => {
 
 const smartLocks = [
   {
-    icon: Key,
-    name: "JoinTech JT701 Smart Lock",
-    description: "Premium fingerprint door lock with WiFi connectivity, supporting up to 100 fingerprints and featuring a sleek touchscreen keypad."
+    icon: MapPin,
+    name: "GPS Tracking & Remote Access",
+    description: "Real-time location tracking with multiple unlocking mechanisms including RFID, remote password, mobile app, SMS, and software integration."
   },
   {
-    icon: Wifi,
-    name: "JT701 WiFi Gateway",
-    description: "Connect your JT701 lock to the internet for remote access, real-time monitoring, and smartphone control via the TTLock app."
+    icon: Battery,
+    name: "Durable Hardware",
+    description: "15,000mAh rechargeable lithium battery with IP67 waterproof casing, suitable for harsh environmental conditions. Features customizable lock cable size."
   },
   {
-    icon: Smartphone,
-    name: "TTLock Smart Access",
-    description: "Manage your JT701 lock remotely, generate time-based access codes, and view access logs through our intuitive mobile app."
+    icon: Bell,
+    name: "Advanced Security Features",
+    description: "Comprehensive security with tamper-proof alerts, illegal unlocking alarms, dual SIM support, and encrypted data transmission for secure monitoring."
   }
 ];
 

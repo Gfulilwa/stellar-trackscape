@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Card, CardContent, CardHeader, CardTitle } from "./ui/card";
-import { Lock, Brain, Shield, Fingerprint, Smartphone, Cpu } from "lucide-react";
+import { Lock, Brain, Shield, Fingerprint, Smartphone, Cpu, Key, Wifi } from "lucide-react";
 
 const Products = () => {
   return (
@@ -79,19 +79,19 @@ const Products = () => {
 
 const smartLocks = [
   {
-    icon: Fingerprint,
-    name: "BiometricX Pro",
-    description: "Advanced fingerprint recognition with military-grade encryption and multi-factor authentication."
+    icon: Key,
+    name: "JoinTech JT701 Smart Lock",
+    description: "Premium fingerprint door lock with WiFi connectivity, supporting up to 100 fingerprints and featuring a sleek touchscreen keypad."
+  },
+  {
+    icon: Wifi,
+    name: "JT701 WiFi Gateway",
+    description: "Connect your JT701 lock to the internet for remote access, real-time monitoring, and smartphone control via the TTLock app."
   },
   {
     icon: Smartphone,
-    name: "SmartLock Connect",
-    description: "Mobile-controlled smart lock with real-time notifications and guest access management."
-  },
-  {
-    icon: Shield,
-    name: "SecureGuard Elite",
-    description: "Tamper-proof design with built-in alarm system and emergency override capabilities."
+    name: "TTLock Smart Access",
+    description: "Manage your JT701 lock remotely, generate time-based access codes, and view access logs through our intuitive mobile app."
   }
 ];
 
